@@ -279,11 +279,10 @@ def error_page_404(status, message, traceback, version):
     <head>
       <script type="text/javascript">
       <!--
-      location.href = location.protocol + '//' + location.hostname + (location.port ? ':' + location.port : '') + '/sabnzbd/' ;
+      location.href = "%s"
       //-->
       </script>
     </head>
     <body><br/></body>
 </html>
-'''
-
+''' % sabnzbd.BROWSER_URL
